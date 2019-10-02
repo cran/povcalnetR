@@ -1,0 +1,43 @@
+## ---- include = FALSE----------------------------------------------------
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+## ----setup---------------------------------------------------------------
+library(povcalnetR)
+
+## ----message=FALSE, warning=FALSE----------------------------------------
+povcalnet()
+
+## ---- warning=FALSE, message=FALSE---------------------------------------
+# Specify ONE country
+povcalnet(country = "ALB")
+
+# Specify MULTIPLE countries
+povcalnet(country = c("ALB", "CHN"))
+
+## ---- warning=FALSE, message=FALSE---------------------------------------
+# Survey year NOT available
+povcalnet(country = "ALB", year = 2012)
+
+# Survey year NOT available - Empty response
+povcalnet(country = "ALB", year = 2018)
+
+## ---- warning=FALSE, message=FALSE---------------------------------------
+povcalnet(country = "ALB", povline = 3.2)
+
+## ---- warning=FALSE, message=FALSE---------------------------------------
+# fill_gaps = FALSE (default)
+povcalnet(country = "HTI")
+
+# fill_gaps = TRUE
+povcalnet(country = "HTI", fill_gaps = TRUE)
+
+## ---- warning=FALSE, message=FALSE---------------------------------------
+# World aggregate
+povcalnet(country = "all", aggregate = TRUE)
+
+# Custom aggregate
+povcalnet(country = c("CHL", "ARG", "BOL"), aggregate = TRUE)
+
