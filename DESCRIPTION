@@ -1,6 +1,6 @@
 Package: povcalnetR
 Title: Client for the 'Povcalnet' API
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c( 
     person(given = "Tony",
            family = "Fujs",
@@ -25,17 +25,17 @@ Description: Provides an interface to compute poverty and inequality indicators 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0
 Depends: R (>= 3.2.0)
 Imports: purrr, stringr, httr, jsonlite, readr, tibble, dplyr, js,
-        tidyr, memoise, naniar, ggthemes, ggplot2
+        tidyr, naniar, memoise
 Suggests: testthat (>= 2.1.0), assertthat, knitr, rmarkdown, forcats,
-        scales
+        scales, ggthemes, ggplot2, utf8, httptest
 VignetteBuilder: knitr
 URL: https://github.com/worldbank/povcalnetR
 BugReports: https://github.com/worldbank/povcalnetR/issues
 NeedsCompilation: no
-Packaged: 2019-09-27 09:11:27 UTC; WB499754
+Packaged: 2020-05-19 16:35:28 UTC; WB499754
 Author: Tony Fujs [aut, cre],
   Ratnadeep Mitra [aut],
   Andres Castaneda [ctb],
@@ -44,4 +44,4 @@ Author: Tony Fujs [aut, cre],
   World Bank [cph]
 Maintainer: Tony Fujs <tonyfujs@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-10-02 10:20:02 UTC
+Date/Publication: 2020-05-19 21:00:02 UTC
